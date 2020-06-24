@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={` ${isNight ? 'boxlight' : 'box'}`}>
-      <h1>is Night : {isNight ? 'true':'False'}</h1>
+      <h1>Is Night : {isNight ? 'true':'False'}</h1>
       <Message className="message" counter={count} />
       <br/>
       <button onClick={()=> setCount(++count)}>UPDATE</button>
