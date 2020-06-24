@@ -7,12 +7,11 @@ function App() {
   let [isNight,setNight] = useState(true)
 
   return (
-    <div className={` ${isNight ? 'boxlight' : 'box'}`}>
-      <h1>Its Night : {isNight ? 'true':'False'}</h1>
-      <Message className="message" counter={count} />
-      <br/>
-      <button onClick={()=> setCount(++count)}>UPDATE</button>
-      <button onClick={()=>setNight(!isNight)}>UPDATE DAY STATUS</button>
+    <div className={`${isNight ? 'boxlight':'box'}`}>
+      <h1>Its Night : {isNight ? 'true' : 'False'}</h1>
+      <Message counter={count} />
+      <button onClick={()=> setCount(++count)}>UPDATE COUNTER</button>
+      <button onClick={()=> setNight(!isNight)} >UPDATE NIGHT STATUS</button>
     </div>
   );
 }
